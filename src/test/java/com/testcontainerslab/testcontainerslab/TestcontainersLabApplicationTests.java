@@ -59,8 +59,7 @@ class TestcontainersLabApplicationTests {
 					.of("spring.datasource.url=" + oracle.getJdbcUrl(),
 							"spring.datasource.username=" + oracle.getUsername(),
 							"spring.datasource.password=" + oracle.getPassword(),
-							"spring.datasource.driverClassName=" + oracle.getDriverClassName(),
-							"spring.jpa.hibernate.ddl-auto=create")
+							"spring.datasource.driverClassName=" + oracle.getDriverClassName())
 					.applyTo(configurableApplicationContext.getEnvironment());
 		}
 	}
